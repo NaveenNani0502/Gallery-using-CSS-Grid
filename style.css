@@ -67,3 +67,21 @@ body{
 .col-2{
     grid-column: span 2;
 }
+
+/* Media Queries Section */
+@media screen and (max-width: 1024px){
+    .container{
+        flex-direction: column;
+        padding-block: 20px;
+        /* background: linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%); */
+    }
+    .gallery{
+        width: 100%;
+        padding-inline: 12px;
+        grid-auto-rows: 220px;
+    }
+    .box{
+        grid-row:span 1;
+        grid-column: span 3;
+    }
+}
